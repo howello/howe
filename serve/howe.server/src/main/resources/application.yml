@@ -1,0 +1,19 @@
+server:
+    port: 12889
+    servlet:
+        context-path: /howe
+spring:
+    profiles:
+        active: dev
+    application:
+        name: howe
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        name: defaultDataSource
+        password: root
+        url: jdbc:mysql://localhost:3306/howe?serverTimezone=UTC
+        username: root
+log:
+    level: info
+    file:
+        path: logs
