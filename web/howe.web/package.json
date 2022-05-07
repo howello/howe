@@ -1,0 +1,103 @@
+{
+  "name": "howe.web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "clipboard": "^2.0.11",
+    "codemirror": "^5.65.3",
+    "core-js": "^3.6.5",
+    "driver.js": "^0.9.8",
+    "dropzone": "^6.0.0-beta.2",
+    "echarts": "^5.3.2",
+    "element-ui": "^2.15.8",
+    "file-saver": "^2.0.5",
+    "fuse.js": "^6.6.0",
+    "js-cookie": "^3.0.1",
+    "jsonlint": "^1.6.3",
+    "jszip": "^3.9.1",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "path-to-regexp": "^6.2.0",
+    "script-loader": "^0.7.2",
+    "sortablejs": "^1.15.0",
+    "screenfull": "4.2.0",
+    "vue": "^2.6.11",
+    "vue-count-to": "^1.0.13",
+    "vue-router": "3.0.2",
+    "vue-splitpane": "^1.0.6",
+    "vuedraggable": "^2.24.3",
+    "vuex": "3.1.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11",
+    "sass": "1.26.2",
+    "sass-loader": "8.0.2",
+    "svg-sprite-loader": "4.1.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/no-async-in-computed-properties": "warn",
+      "vue/no-dupe-keys": "warn",
+      "vue/no-duplicate-attributes": "warn",
+      "vue/no-parsing-error": "warn",
+      "vue/no-reserved-keys": "warn",
+      "vue/no-shared-component-data": "warn",
+      "vue/no-side-effects-in-computed-properties": "warn",
+      "vue/no-template-key": "warn",
+      "vue/no-textarea-mustache": "warn",
+      "vue/no-unused-components": "warn",
+      "vue/no-unused-vars": "warn",
+      "vue/no-use-v-if-with-v-for": "warn",
+      "vue/require-component-is": "warn",
+      "vue/require-prop-type-constructor": "warn",
+      "vue/require-render-return": "warn",
+      "vue/require-v-for-key": "warn",
+      "vue/require-valid-default-prop": "warn",
+      "vue/return-in-computed-property": "warn",
+      "vue/use-v-on-exact": "warn",
+      "vue/valid-template-root": "warn",
+      "vue/valid-v-bind": "warn",
+      "vue/valid-v-cloak": "warn",
+      "vue/valid-v-else-if": "warn",
+      "vue/valid-v-else": "warn",
+      "vue/valid-v-for": "warn",
+      "vue/valid-v-html": "warn",
+      "vue/valid-v-if": "warn",
+      "vue/valid-v-model": "warn",
+      "vue/valid-v-on": "warn",
+      "vue/valid-v-once": "warn",
+      "vue/valid-v-pre": "warn",
+      "vue/valid-v-show": "warn",
+      "vue/valid-v-text": "warn"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
