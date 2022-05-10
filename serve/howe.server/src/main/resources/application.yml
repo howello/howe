@@ -1,5 +1,5 @@
 server:
-    port: 12889
+    port: 9528
     servlet:
         context-path: /howe
 spring:
@@ -13,6 +13,9 @@ spring:
         password: root
         url: jdbc:mysql://localhost:3306/howe?serverTimezone=UTC
         username: root
+    devtools:
+        restart:
+            enabled: true
 log:
     level: info
     file:

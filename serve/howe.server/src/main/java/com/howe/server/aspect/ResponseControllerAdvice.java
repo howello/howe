@@ -75,9 +75,7 @@ public class ResponseControllerAdvice implements ResponseBodyAdvice<Object> {
     @ExceptionHandler(BlogException.class)
     public Result blogExceptionHandler(BlogException e) {
         e.printStackTrace();
-        log.info(e.getMessage());
-        log.error(e.getMessage(),e);
-        log.debug("asdasdadsa");
+        log.error("BlogException异常：", e);
         return Result.failure(e.getCode(), e.getMessage());
 
     }

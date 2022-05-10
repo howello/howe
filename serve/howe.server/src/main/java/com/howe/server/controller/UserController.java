@@ -29,19 +29,4 @@ public class UserController {
     public LoginRespDTO login(LoginReqDTO loginReqDTO) {
         return userService.login(loginReqDTO);
     }
-
-    @GetMapping("/testUser")
-    public String testUser() {
-        return UUID.fastUUID().toString(true);
-    }
-
-    @SneakyThrows
-    @GetMapping("/testError")
-    public String testError() {
-        int i = 1;
-        if (i == 1) {
-            throw new Exception("asdadads");
-        }
-        return UUID.fastUUID().toString(true);
-    }
 }

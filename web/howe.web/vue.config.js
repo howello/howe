@@ -1,6 +1,7 @@
 'use strict'
 const path = require('path')
 const defaultSettings = require('./src/settings.js')
+const proxy = require('http-proxy-middleware')
 
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -26,6 +27,15 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      '/howe': {
+        target: `http://127.0.0.1:9528`, // 测试环境
+        changeOrigin: true,
+        pathRewrite: {
+          '^/howe': '/howe'
+        }
+      }
     }
     // before: require('./mock/mock-server.js')
   },
